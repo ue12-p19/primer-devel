@@ -5,16 +5,10 @@
 * notebooks: Jupyter, nteract, vscode, ...
 * installation conda - vscode
 
-# types de base
+# rudiments
 
-* intro structures de données; exemple matrice
-* paradigme objet
 * booléens et nombres
 * texte
-* liste
-* ensemble
-* dict
-* mentionner le ndarray
 
 # opérateurs
 
@@ -30,6 +24,19 @@
 * arguments
 * pile 
 * if while
+
+# containers
+
+* intro structures de données; exemple matrice
+* paradigme objet
+* liste
+* ensemble
+* dict
+* mentionner le ndarray
+
+
+# itérations
+
 * itérations : for, compréhensions, exp. gén
 
 # références paratgées
