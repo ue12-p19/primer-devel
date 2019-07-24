@@ -108,6 +108,10 @@ exporting/SLIDES.html: exporting/SLIDES.ipynb
 
 
 # this one has the same figure all over the document
+# there seems to be smarter ways to do that
+# see https://github.com/chrisjsewell/ipypublish/issues/91
+# however in this version of the makefile we get a plan allright
+# but code cells just vanish !
 sphinx: exporting/ALL-sphinx.html
 
 exporting/ALL-sphinx.html: exporting/ALL.ipynb
