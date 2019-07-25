@@ -20,30 +20,34 @@
 
 # fonctions et structures de contrôle
 
-* récursif
 * arguments
+* récursif
 * pile 
 * if while
+
+# paradigme objet
 
 # containers
 
 * intro structures de données; exemple matrice
-* paradigme objet
 * liste
 * ensemble
 * dict
 * mentionner le ndarray
 
-
-# itérations
-
-* itérations : for, compréhensions, exp. gén
-
-# références paratgées
+# références partagées
 
 * listes
 
-# rétilisabilité
+# itérations
+
+* itérations : for, compréhensions, exp. gén.
+
+#####
+#####
+#####
+
+# réutilisabilité
 
 * fontcions, modules, classes
 
