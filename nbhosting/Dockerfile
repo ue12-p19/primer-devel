@@ -3,10 +3,8 @@
 # base-notebook lacks at least numpy, widgets, so...
 FROM nbhosting/scipy-notebook
 
-# we use splitcell a lot, so let's enable that extension
-# to find out an extension's name
-# look in the console in a jupyter that has it enabled
 RUN jupyter nbextension enable splitcell/splitcell
 
 RUN pip install --pre rise
 
+RUN pip install nbautoeval ipythontutor
