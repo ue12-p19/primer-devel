@@ -22,7 +22,7 @@
 
 * arguments
 * récursif
-* pile 
+* pile - exceptions
 * if while
 
 # paradigme objet
@@ -49,7 +49,13 @@
 
 # modules
 
+* bibli standard
+* import 
+* pip install  
 * intro attributs
+* recherche modules 
+* modules pathlib, requests, json
+* fichiers
 
 # classes
 
