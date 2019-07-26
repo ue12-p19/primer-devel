@@ -8,3 +8,5 @@ FROM nbhosting/scipy-notebook
 # look in the console in a jupyter that has it enabled
 RUN jupyter nbextension enable splitcell/splitcell
 
+RUN pip install --pre rise
+
