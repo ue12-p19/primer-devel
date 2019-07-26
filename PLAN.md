@@ -47,10 +47,6 @@
 #####
 #####
 
-# réutilisabilité
-
-* fontcions, modules, classes
-
 # modules
 
 * intro attributs
