@@ -64,12 +64,3 @@
 * méthodes, encapsulation*, invariants
 * surcharge des opérateurs
 
-# exceptions
-
-* retour sur la pile
-* bubbling
-
-# fichiers ?
-
-* opan modes
-* `with`
