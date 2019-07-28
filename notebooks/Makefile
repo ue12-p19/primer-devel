@@ -19,8 +19,8 @@ ABSEXPORT = $(shell pwd)/exporting
 HTMLSTYLE = html_ipypublish_all 
 # static reveal slides
 SLIDESSTYLE = slides_ipypublish_all
-# sphinx output comes with a toc but figures are broken
-SPHINXSTYLE = sphinx_ipypublish_main.run
+# 
+SPHINXSTYLE = sphinx_ipypublish_all.run
 
 
 
