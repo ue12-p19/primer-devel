@@ -1,0 +1,10 @@
+jupyterlab
+nbautoeval
+ipythontutor
+numpy
+pandas
+matplotlib
+nbstripout
+nbdime
+nbmerge
+-r notebooks/exporting/requirements.txt
