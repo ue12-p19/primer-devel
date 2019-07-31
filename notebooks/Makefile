@@ -27,7 +27,7 @@ LICENCE_STRIP = ../../flotpython-gittutorial/tools/nbstriplicense.py
 
 NOTEBOOKS := $(shell git ls-files *.ipynb)
 
-all: norm 
+all:: norm 
 
 norm:
 	$(NORMALIZE) $(NORMALIZE_OPTIONS) $(NOTEBOOKS)
@@ -43,18 +43,9 @@ norm:
 # live slideshows, seems to be html
 
 
-export: exec exported-media
+all:: exec
 
-.PHONY: export exported-media
-
-####
-exporting:
-	mkdir exporting
-
-exported-media: 
-	mkdir -p exporting/media
-	(cd ../media; rsync -ai $$(git ls-files) ../notebooks/exporting/media/)
-
+.PHONY: exec
 
 #### exec notebooks
 EXECS=$(foreach nb,$(NOTEBOOKS),exporting/$(subst .ipynb,.exec.ipynb,$(nb)))
@@ -63,11 +54,11 @@ exporting/%.exec.ipynb: %.ipynb
 	jupyter nbconvert --to notebook --execute $*.ipynb --output exporting/$*.exec.ipynb
 	$(LICENCE_STRIP) $@
 
-exec: exporting $(EXECS)
+exec: $(EXECS)
 
 
 
-#### bundle
+#### sphinx
 
 .PHONY: sphinx view-sphinx
 
