@@ -10,7 +10,7 @@
 
 NORMALIZE = ../../flotpython-tools/tools/nbnorm.py
 NORMALIZE_OPTIONS = --author "Thierry Parmentelat" --logo-path media/inria-25-alpha.png --rise
-LICENCE_STRIP = ../tools/nbstriplicense.py
+LICENCE_STRIP = ../../flotpython-gittutorial/tools/nbstriplicense.py
 
 # using ipypublish instead of sphinx-build
 # nbpublish insists on getting an absolute path for output path
@@ -69,13 +69,15 @@ exec: exporting $(EXECS)
 
 #### bundle
 
-.PHONY: sphinx
+.PHONY: sphinx view-sphinx
 
 sphinx: exporting/build/html/index.html
 
-exporting/build/html/index.html: $(EXECS)
+exporting/build/html/index.html: exporting/index.rst exporting/conf.py $(EXECS) 
 	sphinx-build -b html exporting exporting/build/html
 
+view-sphinx:
+	open exporting/build/html/index.html
 
 ### 
 # markdown would be nice too, at least for creating a single bundled document

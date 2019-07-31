@@ -26,6 +26,7 @@ ipysphinx_input_prompt = 'In:'
 ipysphinx_output_prompt = 'Out:'
 ipysphinx_input_toggle = True
 ipysphinx_output_toggle = True
+html_theme = "sphinx_rtd_theme" 
 
 todo_include_todos = False
 
@@ -46,3 +47,4 @@ ipysphinx_show_prompts = True
 ipysphinx_input_prompt = "[{count}]:"
 
 ipysphinx_output_prompt = "[{count}]:"
+

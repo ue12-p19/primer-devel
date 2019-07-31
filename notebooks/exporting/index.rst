@@ -4,16 +4,16 @@
    :numbered:
    :caption: Table of Contents:
 
-   01-environnement
-   02-rudiments
-   03-operateurs
-   04-fonctions
-   05-types-methodes
-   06-containers
-   07-references-partagees
-   08-iterations
-   09-modules
-   10-classes
+   01-environnement.exec
+   02-rudiments.exec
+   03-operateurs.exec
+   04-fonctions.exec
+   05-types-methodes.exec
+   06-containers.exec
+   07-references-partagees.exec
+   08-iterations.exec
+   09-modules.exec
+   10-classes.exec
 
 Licence CC BY-NC-ND - Thierry Parmentelat - Inria 
 
