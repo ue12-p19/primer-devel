@@ -1,6 +1,7 @@
 jupyterlab
 nbautoeval
 ipythontutor
+rise
 numpy
 pandas
 matplotlib
