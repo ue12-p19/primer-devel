@@ -71,13 +71,13 @@ exec: exporting $(EXECS)
 
 .PHONY: sphinx view-sphinx
 
-sphinx: exporting/build/html/index.html
+sphinx: exporting/_build/html/index.html
 
-exporting/build/html/index.html: exporting/index.rst exporting/conf.py $(EXECS) 
-	sphinx-build -b html exporting exporting/build/html
+exporting/_build/html/index.html: exporting/index.rst exporting/conf.py $(EXECS) 
+	sphinx-build -b html exporting exporting/_build/html
 
 view-sphinx:
-	open exporting/build/html/index.html
+	open exporting/_build/html/index.html
 
 ### 
 # markdown would be nice too, at least for creating a single bundled document
@@ -86,7 +86,7 @@ view-sphinx:
 # so let's forget about that for now
 
 clean:
-	rm -rf exporting/build
+	rm -rf exporting/_build
 
 superclean: clean
 	rm -rf exporting/*.ipynb
