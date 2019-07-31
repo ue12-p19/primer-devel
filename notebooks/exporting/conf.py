@@ -27,6 +27,7 @@ ipysphinx_output_prompt = 'Out:'
 ipysphinx_input_toggle = True
 ipysphinx_output_toggle = True
 html_theme = "sphinx_rtd_theme" 
+html_title = "Python primer" 
 
 todo_include_todos = False
 
