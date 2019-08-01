@@ -17,7 +17,7 @@ def tracks(coursedir):
 
     track_specs = [
         ('primer' , 'Python primer', 
-         [ ('primer', '[0-9]-*.ipynb'),
+         [ ('primer', 'notebooks/[0-9]-*.ipynb'),
          ]),
         ]
 
