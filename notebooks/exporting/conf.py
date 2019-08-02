@@ -28,7 +28,11 @@ ipysphinx_input_toggle = True
 ipysphinx_output_toggle = True
 html_theme = "sphinx_rtd_theme" 
 html_title = "Python primer" 
-
+project = "python primer"
+author = "Thierry Parmentelat"
+html_theme_options = {
+    'display_version': False,
+}
 todo_include_todos = False
 
 numfig = True
