@@ -1,0 +1,8 @@
+ipypublish[sphinx]
+sphinx-rtd-theme
+# for executing the notebooks on rtd we need these
+jupyter_client
+ipykernel
+ipythontutor
+nbautoeval
+ipywidgets
