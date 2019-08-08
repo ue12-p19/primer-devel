@@ -1,6 +1,6 @@
+# this file is primarily for readthedocs.io
 ipypublish[sphinx]
 sphinx-rtd-theme
-# for executing the notebooks on rtd we need these
 jupyter_client
 ipykernel
 ipythontutor
