@@ -6,7 +6,7 @@ Index
    :includehidden:
    :maxdepth: 2
    :numbered:
-   :caption: Table of Contents:
+   :caption: Sommaire:
 
    01-environnement
    02-rudiments
