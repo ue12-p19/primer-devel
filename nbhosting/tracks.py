@@ -13,11 +13,17 @@ def tracks(coursedir):
     result is a list of Track instances
     """
 
-    # 1 single track
+    # 3 tracks
 
     track_specs = [
         ('primer' , 'Python primer', 
-         [ ('primer', '1-[0-9]*.ipynb'),
+         [ ('primer', 'notebooks/1-[0-9]*.ipynb'),
+         ]),
+        ('numérique' , 'Python numérique', 
+         [ ('numérique', 'notebooks/2-[0-9]*.ipynb'),
+         ]),
+        ('dataviz' , 'Python dataviz', 
+         [ ('dataviz', 'notebooks/3-[0-9]*.ipynb'),
          ]),
         ]
 
@@ -25,8 +31,7 @@ def tracks(coursedir):
                   [Section(coursedir=coursedir,
                            name=section_name, 
                            notebooks=notebooks_by_pattern(
-                               coursedir,
-                               f"notebooks/{pattern}"))
+                               coursedir, pattern))
                    for section_name, pattern in section_specs],
                   name=track_name,
                   description=track_description)
