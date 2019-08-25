@@ -9,16 +9,20 @@
 
 
 NORMALIZE = ../../flotpython-tools/tools/nbnorm.py
-NORMALIZE_OPTIONS = --author "Thierry Parmentelat" --logo-path media/inria-25-alpha.png --rise
+NORMOPTS-THIERRY = --author "Thierry Parmentelat" --logo-path media/inria-25-alpha.png --rise
+NORMOPTS-VALERIE = --author "Valérie Roy" --logo-path media/ensmp-25-alpha.png --rise
 LICENCE_STRIP = ../../flotpython-gittutorial/tools/nbstriplicense.py
 
 
-NOTEBOOKS := $(shell git ls-files *.ipynb)
+NB-THIERRY := $(shell git ls-files 1*.ipynb)
+NB-VALERIE := $(shell git ls-files [23]*.ipynb)
+NOTEBOOKS := $(NB-THIERRY) $(NB-VALERIE)
 
 all:: norm 
 
 norm:
-	$(NORMALIZE) $(NORMALIZE_OPTIONS) $(NOTEBOOKS)
+	$(NORMALIZE) $(NORMOPTS-THIERRY) $(NB-THIERRY)
+	$(NORMALIZE) $(NORMOPTS-VALERIE) $(NB-VALERIE)
 
 #########################################################################
 # publication
