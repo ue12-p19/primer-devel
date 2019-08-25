@@ -16,14 +16,14 @@ def tracks(coursedir):
     # 3 tracks
 
     track_specs = [
-        ('primer' , 'Python primer', 
+        ('primer' , 'Python primer',
          [ ('primer', 'notebooks/1-[0-9]*.ipynb'),
          ]),
-        ('numérique' , 'Python numérique', 
+        ('numérique' , 'Python numérique',
          [ ('numérique', 'notebooks/2-[0-9]*.ipynb'),
          ]),
-        ('dataviz' , 'Python dataviz', 
-         [ ('dataviz', 'notebooks/3-[0-9]*.ipynb'),
+        ('dataviz & pandas' , 'dataviz & pandas',
+         [ ('dataviz & pandas', 'notebooks/3-[0-9]*.ipynb'),
          ]),
         ]
 
