@@ -1,13 +1,7 @@
 jupyterlab
-nbautoeval
-ipythontutor
 rise
-numpy
-pandas
-matplotlib
 nbstripout
 nbdime
 nbmerge
--r notebooks/exporting/requirements.txt
 jupyter-contrib-nbextensions
-ipywidgets
+-r notebooks/requirements.txt
