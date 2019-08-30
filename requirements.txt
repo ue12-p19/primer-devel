@@ -1,7 +1,30 @@
-jupyterlab
+# first we have the core requirements
+# i.e. libraries used for running 
+# code in the notebooks per se
+#
+ipykernel
+ipythontutor
+nbautoeval
+ipywidgets
+numpy
+pandas
+matplotlib
+seaborn
+
+# jupyter extensions
+#
 rise
+jupyter-contrib-nbextensions
+
+# this part is more for authors
+# 
+jupyterlab
 nbstripout
 nbdime
 nbmerge
-jupyter-contrib-nbextensions
--r notebooks/requirements.txt
+
+# this part is for readthedocs
+#
+ipypublish[sphinx]
+sphinx-rtd-theme
+jupyter_client
