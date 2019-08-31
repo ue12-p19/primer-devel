@@ -1,6 +1,10 @@
 # notebooks
 
-Pour suivre ce cours, deux options :
+Le cours est exclusivement écrit en notebooks sous forme de slides. 
+
+Remarquez également la présence de notes qui approfondissent les slides; ces notes n'apparaissent pas à l'écran dans la vue 'slide' standard, on les voit apparaitre dans dans la sortie html, ainsi que dans la vue orateur (voir 'visionneuse').
+
+Pour utiliser les notebooks, deux options :
 
 * installation Jupyter locale
 * utilisation à distance sur nbhosting
@@ -8,6 +12,8 @@ Pour suivre ce cours, deux options :
 Dans l'esprit de la prise d'autonomie, c'est la première option qui est recommandée à terme.
 
 Toutefois la plateforme nbhosting est disponible en guise de secours, notamment au début du cours, pour permettre de suivre les cours sans installation locale préalable.
+
+Notez également la présence d'une version statique en html, voir la dernière section. 
 
 # installation locale
 
@@ -68,3 +74,39 @@ Il existe aussi quelques fonctionnalités spécifiques à nbhosting :
     ![](git-terminal.png)]
 
   
+# visionneuse de slides
+
+Les notebooks comportant des slides démarrent en principe automatiquement en mode slide; pour aller/revenir vers le mode notebook *classic* :
+
+* avec le clavier, utiliser 'Alt-r'  (Option-r sur MacOS)
+* avec la souris
+  * pour quitter le mode slide, la grosse croix en haut à gauche
+  * pour entrer dans le mode slide, l'icône en forme de barchart 
+
+![](slide-to-classic.png)
+![](classic-to-slide.png)
+
+Les touches cruciales :
+
+* *`Espace`* ou *`Shift-Espace`* pour se déplacer dans les slides
+* *`Shift-Enter`* pour évaluer la cellule courante
+* *`Control +`* et *`Control -`* pour agrandir / rapetisser le contenu; utile pour s'adapter au contenu lorsqu'un slide est plus dense; ce sont ici les raccourcis standard du navigateur, sur MacOS faire plutôt *`Command +`* et *`Command -`*
+
+Et aussi :
+
+* si vous entrez par mégarde en mode édition, comme d'habitude utiliser `Escape` pour revenir en mode commande; sinon vous ne commandez plus la visionneuse, vous insérez dans la cellule courante, évidemment..
+* la touche `w` permet d'accéder au mode 'overview'; utilisez les flêches pour vous déplacer dans la présentation, et tapez à nouveau `w` pour revenir au mode slide usuel
+
+![le mode overview](slides-overview.png)
+
+* la touche `t` permet de passer en mode 'orateur' avec deux vues distinctes, l'une pour le public et l'autre pour l'orateur; cela suppose de placer les deux vues sur des displays différents; pour en sortir fermez simplement la fenêtre de notes. C'est un setup qui peut s'avérer compliqué à mettre en place en cours. L'avantage est de voir la slide suivante.
+
+![le mode overview](slides-notes.png)
+
+# version html
+
+En guise de *handouts* le contenu de ce cours est disponible en html 'statique'
+
+https://flotpython-primer.readthedocs.io/
+
+ évidemment cette forme vient avec toutes les cellules exécutées (à l'inverse du repo git où on ne range que des notebooks vierges, utiliser `nbstripout` pour le nettoyage)
