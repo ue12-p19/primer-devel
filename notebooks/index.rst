@@ -8,10 +8,6 @@ Index
    :numbered:
    :caption: Sommaire:
 
-   3-01-dataviz
-   3-02-pandas-into-series
-   3-03-pandas-dataframe
-   3-04-pandas-alignments
    3-05-pandas-missing-data
    3-06-pandas-statistics
    3-07-pandas-indexing
